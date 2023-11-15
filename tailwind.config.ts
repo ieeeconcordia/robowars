@@ -17,6 +17,7 @@ const config: Config = {
       "landing-grey": "#383838",
       black: "#000000",
       white: "#FFFFFF",
+      "header-grey": "#5B5B5B",
     },
     extend: {
       backgroundImage: {
