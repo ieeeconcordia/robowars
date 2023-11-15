@@ -1,12 +1,13 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '@/components/navbar'
-import LinkSea from '@/components/link-sea/link-sea'
-import Header from '@/components/header/header'
-import Footer from '@/components/footer'
+import type { Metadata } from "next";
+import { Inter, Raleway } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar";
+import LinkSea from "@/components/link-sea/link-sea";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const raleway = Raleway({ subsets: ["latin-ext"], variable: "--font-raleway" });
 
 export const metadata: Metadata = {
   title: "IEEE Robowars 2024",
