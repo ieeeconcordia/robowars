@@ -33,7 +33,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply py-4 px-4 bg-primary text-white font-semibold rounded-md shadow-md border-white;
+    @apply py-4 px-4 font-semibold rounded-md shadow-md border-white;
   }
 }
 
@@ -70,14 +70,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
   }
   .mobile-p {
-    color: #000;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 300;
+    line-height: inherit;
   }
   .mobile-section {
     display: flex;
