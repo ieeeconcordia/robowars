@@ -2,18 +2,43 @@
 
 /* Mobile (the default) */
 #header-container {
-  @apply max-h-24 bg-white flex w-full flex-row justify-between items-center pr-4 pl-2;
+  @apply max-h-24 bg-white flex w-full flex-row justify-between items-center pr-4 pl-2 font-inter;
 
   #header-icon-container {
     @apply w-16;
   }
 
-  #header-hamburger-container {
+  #navbar-hamburger-container {
     @apply aspect-square w-8;
   }
 
-  #header-links-container {
-    @apply hidden;
+  #navbar-links-container {
+    @apply w-screen h-screen bg-white fixed top-0 left-0 flex flex-col justify-start items-end p-8 gap-y-4 text-black text-3xl font-bold transition-transform duration-200 ease-in-out;
+
+    .navbar-link {
+        @apply transition-transform duration-200 ease-in-out;
+      }
+
+    /* Mobile has a flying navbar, unlike the other sizes */
+    &.navbar-is-open {
+      @apply translate-x-0;
+
+      .navbar-link {
+        @apply translate-x-0 delay-75;
+      }
+    }
+
+    &.navbar-is-closed {
+      @apply translate-x-full delay-75;
+
+      .navbar-link {
+        @apply translate-x-full;
+      }
+    }
+
+    .navbar-close {
+      @apply w-12 h-full flex flex-col justify-end;
+    }
   }
 }
 
@@ -27,19 +52,23 @@
 /* Desktop */
 @media screen(lg) {
   #header-container {
-    #header-hamburger-container {
+    #navbar-hamburger-container {
       @apply hidden;
     }
 
-    #header-links-container {
-      @apply flex flex-row w-full justify-end gap-x-4 items-center;
+    #navbar-links-container {
+      @apply static flex flex-row w-[unset] h-8 p-0 justify-end gap-x-4 items-center translate-x-0 !important;
 
-      .header-link {
-        @apply text-black text-base font-semibold;
+      .navbar-link {
+        @apply text-base translate-x-0 !important;
       }
 
-      .header-link.button {
+      .navbar-link.button {
         @apply bg-secondary py-2 px-4 text-white;
+      }
+
+      .navbar-close {
+        @apply hidden;
       }
     }
   }

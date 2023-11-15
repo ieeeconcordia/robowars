@@ -1,28 +1,46 @@
 // basic nextjs component template for a header
 
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import './header.css';
+import Link from 'next/link';
 
 export default function Header() {
+    const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
+
+    function openNavbar() {
+        setIsNavbarOpen(true);
+    }
+
+    function closeNavbar() {
+        setIsNavbarOpen(false);
+    }
+
     return (
         <div id="header-container">
             <div id="header-icon-container">
-                <a href="/">
+                <Link href="/">
                     <Image src="/images/ieee-logo-blue.png" width={64} height={64} alt="IEEE logo" />
-                </a>
+                </Link>
             </div>
-            <div id="header-hamburger-container">
-                <a href="/">
-                    <Image src="/images/hamburger-menu.png" width={64} height={64} alt="menu button for " />
-                </a>
+            <div id="navbar-hamburger-container">
+                <button onClick={openNavbar}>
+                    <Image src="/images/hamburger-menu.png" width={64} height={64} alt="menu button for navigation" />
+                </button>
             </div>
-            <div id="header-links-container">
-                <a className="header-link" href="/">Home</a>
-                <a className="header-link" href="/competitions">Competition</a>
-                <a className="header-link" href="/past-competitions">Past Competitions</a>
-                <a className="header-link" href="/#contact-container">Contact Us</a>
-                <a className="header-link button" href="/">Sponsorships</a>
+            <div id="navbar-links-container" className={isNavbarOpen ? 'navbar-is-open' : 'navbar-is-closed'}>
+                <Link className="navbar-link" href="/">Home</Link>
+                <Link className="navbar-link" href="/competitions">Competition</Link>
+                <Link className="navbar-link" href="/past-competitions">Past Competitions</Link>
+                <Link className="navbar-link" href="/#contact-container">Contact Us</Link>
+                <Link className="navbar-link button" href="/">Sponsorships</Link>
+                <div className="navbar-close">
+                    <button onClick={closeNavbar}>
+                        <Image src="/images/close.png" width={64} height={64} alt="menu button for closing the navigation" />
+                    </button>
+                </div>
             </div>
         </div>
     )
