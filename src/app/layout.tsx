@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/navbar'
-import LinkSea from '@/components/link-sea'
+import LinkSea from '@/components/link-sea/link-sea'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 

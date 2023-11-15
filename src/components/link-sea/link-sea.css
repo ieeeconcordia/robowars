@@ -1,0 +1,23 @@
+#linksea-container {
+  @apply max-h-[150px] bg-[#21CBBB];
+}
+
+.linksea-container-default {
+  @apply py-4;
+
+  .linksea-link {
+    @apply block whitespace-nowrap text-sm;
+  }
+
+  .linksea-ieee-title {
+    @apply block whitespace-nowrap text-2xl mt-4;
+  }
+}
+
+.linksea-container-md {
+  @apply py-4;
+}
+
+.linksea-container-lg {
+  @apply py-4;
+}
