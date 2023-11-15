@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <LinkSea />
         <Header />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>
