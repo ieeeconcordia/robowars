@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Homepage
+    <main className="mobile-section bg-white sm:max-w-sm">
+      <div className="">
+        <h1 className="mobile-h2 bg-dark-grey">IEEE Robowars 2024</h1>
+      </div>
     </main>
-  )
+  );
 }
