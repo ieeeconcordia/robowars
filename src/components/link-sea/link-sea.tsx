@@ -5,8 +5,8 @@ import "./link-sea.css";
 
 export default function LinkSea() {
     return (
-        <div id="linksea-container" className="linksea-container-default">
-            <div id="linksea-links-container" className="linksea-links-container">
+        <div id="linksea-container">
+            <div id="linksea-links-container">
                 <a className="linksea-link" target="_blank" href="https://ieeeconcordia.ca">IEEE Concordia</a>
                 <a className="linksea-link" target="_blank" href="https://ieee.org">IEEE.org</a>
                 <a className="linksea-link" target="_blank" href="https://www.ieeeconcordia.ca/events">Events</a>
