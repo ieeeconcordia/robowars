@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Raleway } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
 import LinkSea from "@/components/link-sea/link-sea";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer";
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <LinkSea />
         <Header />
-        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>
