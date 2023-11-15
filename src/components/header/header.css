@@ -1,0 +1,46 @@
+/* Header */
+
+/* Mobile (the default) */
+#header-container {
+  @apply max-h-24 bg-white flex w-full flex-row justify-between items-center pr-4 pl-2;
+
+  #header-icon-container {
+    @apply w-16;
+  }
+
+  #header-hamburger-container {
+    @apply aspect-square w-8;
+  }
+
+  #header-links-container {
+    @apply hidden;
+  }
+}
+
+/* Tablet */
+@media screen(md) {
+  #header-container {
+    @apply pl-4;
+  }
+}
+
+/* Desktop */
+@media screen(lg) {
+  #header-container {
+    #header-hamburger-container {
+      @apply hidden;
+    }
+
+    #header-links-container {
+      @apply flex flex-row w-full justify-end gap-x-4 items-center;
+
+      .header-link {
+        @apply text-black text-base font-semibold;
+      }
+
+      .header-link.button {
+        @apply bg-secondary py-2 px-4 text-white;
+      }
+    }
+  }
+}
