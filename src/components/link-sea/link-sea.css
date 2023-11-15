@@ -1,23 +1,25 @@
+/* Linksea */
+
+/* Mobile (the default) */
 #linksea-container {
-  @apply max-h-[150px] bg-[#21CBBB];
-}
+  @apply max-h-[150px] bg-[#21CBBB] flex w-full py-4 px-8 flex-col justify-center items-center text-white;
 
-.linksea-container-default {
-  @apply py-4;
+  .linksea-links-container {
+    @apply flex flex-row gap-x-4 gap-y-8 flex-wrap justify-around;
 
-  .linksea-link {
-    @apply block whitespace-nowrap text-sm;
-  }
-
-  .linksea-ieee-title {
-    @apply block whitespace-nowrap text-2xl mt-4;
+    .linksea-link {
+      @apply block whitespace-nowrap text-sm;
+    }
   }
 }
 
-.linksea-container-md {
-  @apply py-4;
+/* Tablet */
+@media screen(md) {
+  #linksea-container {
+    @apply flex-row justify-between;
+  }
 }
 
-.linksea-container-lg {
-  @apply py-4;
+/* Desktop */
+@media screen(lg) {
 }
