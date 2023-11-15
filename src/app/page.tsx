@@ -4,12 +4,17 @@ export default function Home() {
   return (
     <main className=" bg-white">
       {/* Landing Page */}
-      <div className="mobile-section h-[calc(100vh-4rem)] bg-landing-grey text-white">
-        <h1 className="mobile-landing-header">ROBOWARS</h1>
+      <div className="mobile-section h-[calc(100vh-6rem)] bg-landing-grey text-white">
+        <div>
+          <h1 className="mobile-landing-header">ROBOWARS</h1>
+          <h5>March 2024</h5>
+        </div>
+
         <p className="mobile-p max-w-sm font-inter">
           The ultimate platform where the thunder of metal, the buzz of
           technology, and the thrill of competition converge.
         </p>
+        <p className="mobile-p">Counter</p>
       </div>
 
       {/* About section */}
