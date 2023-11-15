@@ -39,7 +39,6 @@ body {
 
 @media (max-width: 640px) {
   .mobile-h2 {
-    color: black;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 32px;
