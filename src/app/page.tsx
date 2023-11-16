@@ -1,4 +1,5 @@
 import CategoriesCard from "@/components/categories-card";
+import SocialRow from "@/components/social-row/social-row";
 
 export default function Home() {
   return (
@@ -133,6 +134,11 @@ export default function Home() {
         <button className="btn-primary bg-primary text-white">
           Register Now
         </button>
+      </div>
+
+      <div className="mobile-section text-black">
+        <h2 className="mobile-h2">Follow us on our platforms for updates!</h2>
+        <SocialRow />
       </div>
     </main>
   );
