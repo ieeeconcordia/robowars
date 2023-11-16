@@ -57,13 +57,11 @@ export default function PastCompetitions() {
         </Carousel>
       </div>
 
-      <div className="mobile-section text-black bg-light-grey">
-        <h1 className="mobile-h2 ">Robowars 2018</h1>
+      <div className="mobile-section text-black bg-white">
+        <h1 className="mobile-h2">Want to see more?</h1>
         <p className="mobile-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          voluptates, voluptas, quidem, quos voluptate voluptatem quae
-          exercitationem dolorum quas voluptatum nesciunt. Quam, quibusdam
-          voluptatem. Quas, voluptate? Quos, voluptatem? Quisquam.
+          Find more photos of the previous Robowars and more on our Facebook
+          page!
         </p>
       </div>
     </main>
