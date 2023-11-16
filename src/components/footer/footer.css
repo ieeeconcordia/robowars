@@ -1,0 +1,41 @@
+/* Footer */
+
+/* Mobile (the default) */
+#footer-container {
+  @apply w-full max-w-sm m-auto h-[18rem] px-4 pt-4 text-base flex flex-col justify-center items-start;
+
+  #footer-ieee-container {
+    @apply flex flex-row justify-around items-center;
+  }
+  
+  #footer-info-container {
+    @apply flex flex-col justify-center items-start px-4;
+
+    .info-piece-container {
+      .info-piece-title {
+        @apply mt-2 font-bold;
+      }
+
+      .info-piece-content {
+        @apply mt-1 opacity-80;
+      }
+    }
+  }
+
+  #footer-copyright-container {
+    @apply text-xs w-full text-center mt-6 opacity-80;
+  }
+}
+
+/* Tablet */
+@media screen(md) {
+  #footer-container {
+    #footer-ieee-container {
+    @apply place-self-center !important;
+  }
+  }
+}
+
+/* Desktop */
+@media screen(lg) {
+}
