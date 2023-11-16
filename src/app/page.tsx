@@ -1,24 +1,39 @@
+"use client";
 import CategoriesCard from "@/components/categories-card";
+import CountdownTimer from "@/components/countdown-timer";
 
 export default function Home() {
   return (
     <main className=" bg-white">
       {/* Landing Page */}
-      <div className="mobile-section h-[calc(100vh-6rem)] bg-landing-grey text-white">
-        <div>
-          <h1 className="mobile-landing-header">ROBOWARS</h1>
-          <h5>March 2024</h5>
-        </div>
+      <div className="relative mobile-section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("images/Landing-image.webp")',
+            opacity: 0.23, // Adjust the opacity value as needed
+          }}
+        ></div>
 
-        <p className="mobile-p max-w-sm font-inter">
-          The ultimate platform where the thunder of metal, the buzz of
-          technology, and the thrill of competition converge.
-        </p>
-        <p className="mobile-p">Counter</p>
+        <div className="relative z-10 mx-auto">
+          <div className="mb-8 mx-auto">
+            <h1 className="mobile-landing-header text-center w-fit">
+              ROBOWARS
+            </h1>
+            <h5 className="w-fit">March 2024</h5>
+          </div>
+
+          <p className="mobile-p max-w-sm font-inter drop-shadow-lg mb-8">
+            Where machines collide and innovation thrives!
+          </p>
+          {/* <p className="mobile-p">Counter</p> */}
+          <CountdownTimer eventDate={"2024-03-14"} />
+        </div>
       </div>
 
       {/* About section */}
-      <div className="mobile-section text-black bg-light-grey">
+      <div className="mobile-section text-black bg-light-grey ">
         <h1 className="mobile-h2 ">About</h1>
         <p className="mobile-p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
