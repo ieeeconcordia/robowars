@@ -1,4 +1,5 @@
 import CategoriesCard from "@/components/categories-card";
+import DateCounter from "@/components/date-counter/date-counter";
 import SocialRow from "@/components/social-row/social-row";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
           The ultimate platform where the thunder of metal, the buzz of
           technology, and the thrill of competition converge.
         </p>
-        <p className="mobile-p">Counter</p>
+        <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
       </div>
 
       {/* About section */}
