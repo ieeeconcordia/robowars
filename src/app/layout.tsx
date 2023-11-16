@@ -3,7 +3,7 @@ import { Inter, Raleway } from "next/font/google";
 import "./globals.css";
 import LinkSea from "@/components/link-sea/link-sea";
 import Header from "@/components/header/header";
-import Footer from "@/components/footer";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const raleway = Raleway({ subsets: ["latin-ext"], variable: "--font-raleway" });
