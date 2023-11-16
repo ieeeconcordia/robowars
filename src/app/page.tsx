@@ -1,5 +1,6 @@
 import CategoriesCard from "@/components/categories-card";
 import DateCounter from "@/components/date-counter/date-counter";
+import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import SocialRow from "@/components/social-row/social-row";
 
 export default function Home() {
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* About section */}
       <div className="mobile-section text-black bg-light-grey">
+        <DropdownCard title="What is this?">
+          The ultimate platform where the thunder of metal, the buzz of technology, and the thrill of competition converge. It's not just a battle; its a spectacle where amateur enthusiasts and seasoned engineers unveil their autonomous combatants to engage in fierce mechanical warfare.
+        </DropdownCard>
         <h1 className="mobile-h2 ">About</h1>
         <p className="mobile-p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
