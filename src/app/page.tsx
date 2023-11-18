@@ -1,3 +1,4 @@
+"use client";
 import CategoriesCard from "@/components/categories-card";
 import DateCounter from "@/components/date-counter/date-counter";
 import DropdownCard from "@/components/dropdown-card/dropdown-card";
@@ -7,17 +8,29 @@ export default function Home() {
   return (
     <main className=" bg-white">
       {/* Landing Page */}
-      <div className="mobile-section h-[calc(100vh-6rem)] bg-landing-grey text-white">
-        <div>
-          <h1 className="mobile-landing-header">ROBOWARS</h1>
-          <h5>March 2024</h5>
-        </div>
+      <div className="relative mobile-section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("images/Landing-image.webp")',
+            opacity: 0.23, // Adjust the opacity value as needed
+          }}
+        ></div>
 
-        <p className="mobile-p max-w-sm font-inter">
-          The ultimate platform where the thunder of metal, the buzz of
-          technology, and the thrill of competition converge.
-        </p>
-        <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
+        <div className="relative z-10 mx-auto">
+          <div className="mb-8 mx-auto">
+            <h1 className="mobile-landing-header text-center w-fit">
+              ROBOWARS
+            </h1>
+            <h5 className="w-fit">March 2024</h5>
+          </div>
+
+          <p className="mobile-p max-w-sm font-inter drop-shadow-lg mb-8">
+            Where machines collide and innovation thrives!
+          </p>
+          <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
+        </div>
       </div>
 
       {/* About section */}
@@ -25,6 +38,7 @@ export default function Home() {
         <DropdownCard title="What is this?">
           The ultimate platform where the thunder of metal, the buzz of technology, and the thrill of competition converge. It's not just a battle; its a spectacle where amateur enthusiasts and seasoned engineers unveil their autonomous combatants to engage in fierce mechanical warfare.
         </DropdownCard>
+
         <h1 className="mobile-h2 ">About</h1>
         <p className="mobile-p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
