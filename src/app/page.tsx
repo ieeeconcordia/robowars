@@ -1,6 +1,5 @@
 "use client";
 import CategoriesCard from "@/components/categories-card";
-import CountdownTimer from "@/components/countdown-timer";
 
 export default function Home() {
   return (
@@ -27,8 +26,6 @@ export default function Home() {
           <p className="mobile-p max-w-sm font-inter drop-shadow-lg mb-8">
             Where machines collide and innovation thrives!
           </p>
-          {/* <p className="mobile-p">Counter</p> */}
-          <CountdownTimer eventDate={"2024-03-14"} />
         </div>
       </div>
 
