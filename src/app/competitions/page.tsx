@@ -1,3 +1,5 @@
+import DropdownCard from "@/components/dropdown-card/dropdown-card";
+import SocialRow from "@/components/social-row/social-row";
 import Link from "next/link";
 
 export default function Competitions() {
@@ -64,18 +66,34 @@ export default function Competitions() {
       <div className="mobile-section text-white bg-primary">
         <h1 className="mobile-h2">FAQ</h1>
         <div className="w-full flex flex-col gap-4">
-          <div className="w-full px-4 py-4 mobile-p text-black bg-white rounded text-left">
-            <p className="">What happens in Robowars?</p>
-          </div>
-          <div className="w-full px-4 py-4 mobile-p text-black bg-white rounded text-left">
-            <p className="">What happens in Robowars?</p>
-          </div>
-          <div className="w-full px-4 py-4 mobile-p text-black bg-white rounded text-left">
-            <p className="">What happens in Robowars?</p>
-          </div>
-          <div className="w-full px-4 py-4 mobile-p text-black bg-white rounded text-left">
-            <p className="">What happens in Robowars?</p>
-          </div>
+          <DropdownCard title="What is this?">
+            The ultimate platform where the thunder of metal, the buzz of
+            technology, and the thrill of competition converge. It's not just a
+            battle; its a spectacle where amateur enthusiasts and seasoned
+            engineers unveil their autonomous combatants to engage in fierce
+            mechanical warfare.
+          </DropdownCard>
+          <DropdownCard title="What is this?">
+            The ultimate platform where the thunder of metal, the buzz of
+            technology, and the thrill of competition converge. It's not just a
+            battle; its a spectacle where amateur enthusiasts and seasoned
+            engineers unveil their autonomous combatants to engage in fierce
+            mechanical warfare.
+          </DropdownCard>
+          <DropdownCard title="What is this?">
+            The ultimate platform where the thunder of metal, the buzz of
+            technology, and the thrill of competition converge. It's not just a
+            battle; its a spectacle where amateur enthusiasts and seasoned
+            engineers unveil their autonomous combatants to engage in fierce
+            mechanical warfare.
+          </DropdownCard>
+          <DropdownCard title="What is this?">
+            The ultimate platform where the thunder of metal, the buzz of
+            technology, and the thrill of competition converge. It's not just a
+            battle; its a spectacle where amateur enthusiasts and seasoned
+            engineers unveil their autonomous combatants to engage in fierce
+            mechanical warfare.
+          </DropdownCard>
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
@@ -95,9 +113,8 @@ export default function Competitions() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button className="btn-primary bg-primary text-white">
-          Register Now
-        </button>
+        <h3 className="mobile-h3">Follow us on our platforms for updates!</h3>
+        <SocialRow />
       </div>
     </main>
   );

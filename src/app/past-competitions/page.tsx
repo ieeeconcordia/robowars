@@ -1,5 +1,6 @@
 "use client";
 
+import SocialRow from "@/components/social-row/social-row";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -60,9 +61,10 @@ export default function PastCompetitions() {
       <div className="mobile-section text-black bg-white">
         <h1 className="mobile-h2">Want to see more?</h1>
         <p className="mobile-p">
-          Find more photos of the previous Robowars and more on our Facebook
-          page!
+          Find more photos of the previous Robowars and more on our social media
+          pages!
         </p>
+        <SocialRow />
       </div>
     </main>
   );
