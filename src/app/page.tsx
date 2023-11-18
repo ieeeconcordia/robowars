@@ -1,5 +1,8 @@
 "use client";
 import CategoriesCard from "@/components/categories-card";
+import DateCounter from "@/components/date-counter/date-counter";
+import DropdownCard from "@/components/dropdown-card/dropdown-card";
+import SocialRow from "@/components/social-row/social-row";
 
 export default function Home() {
   return (
@@ -26,11 +29,16 @@ export default function Home() {
           <p className="mobile-p max-w-sm font-inter drop-shadow-lg mb-8">
             Where machines collide and innovation thrives!
           </p>
+          <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
         </div>
       </div>
 
       {/* About section */}
-      <div className="mobile-section text-black bg-light-grey ">
+      <div className="mobile-section text-black bg-light-grey">
+        <DropdownCard title="What is this?">
+          The ultimate platform where the thunder of metal, the buzz of technology, and the thrill of competition converge. It's not just a battle; its a spectacle where amateur enthusiasts and seasoned engineers unveil their autonomous combatants to engage in fierce mechanical warfare.
+        </DropdownCard>
+
         <h1 className="mobile-h2 ">About</h1>
         <p className="mobile-p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
@@ -145,6 +153,11 @@ export default function Home() {
         <button className="btn-primary bg-primary text-white">
           Register Now
         </button>
+      </div>
+
+      <div className="mobile-section text-black">
+        <h2 className="mobile-h2">Follow us on our platforms for updates!</h2>
+        <SocialRow />
       </div>
     </main>
   );

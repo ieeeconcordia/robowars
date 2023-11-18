@@ -1,0 +1,29 @@
+/* Linksea */
+
+/* Mobile (the default) */
+#date-counter-container {
+  @apply grid grid-flow-col grid-cols-4 max-w-xs gap-4 justify-center items-center;
+
+  .piece {
+    @apply flex flex-col justify-center items-center;
+
+    .count {
+      @apply text-4xl font-bold;
+    }
+
+    .title {
+      @apply font-semibold;
+    }
+  }
+}
+
+/* Tablet */
+@media screen(md) {
+  #date-counter-container {
+    
+  }
+}
+
+/* Desktop */
+@media screen(lg) {
+}

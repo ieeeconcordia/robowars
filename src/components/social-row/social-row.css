@@ -1,0 +1,18 @@
+/* Linksea */
+
+/* Mobile (the default) */
+#social-row-container {
+  @apply flex flex-row gap-4;
+}
+
+/* Tablet */
+@media screen(md) {
+  #social-row-container {
+  }
+}
+
+/* Desktop */
+@media screen(lg) {
+  #social-row-container {
+  }
+}

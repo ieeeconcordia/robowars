@@ -1,0 +1,52 @@
+/* Linksea */
+
+/* Mobile (the default) */
+#dropdown-card-container {
+  @apply flex flex-col items-stretch justify-stretch w-full h-full outline rounded-md outline-2;
+  
+  #card-title-container {
+    @apply flex flex-row items-center justify-between w-full h-12 bg-primary text-white px-4 py-2;
+
+    #card-title {
+
+    }
+
+  #card-arrow-container {
+    #card-arrow {
+      @apply transition-transform duration-200 ease-in-out;
+
+      &.is-up {
+        @apply rotate-180;
+      }
+
+      &.is-down {
+        @apply rotate-0;
+      }
+    }
+  }
+  }
+
+  #card-content-container {
+    @apply px-4 py-2 overflow-clip transition-all duration-200 ease-in-out;
+
+    &.is-open {
+      @apply max-h-[1000px] py-2;
+    }
+
+    &.is-closed {
+      @apply max-h-0 py-0;
+    }
+
+    #card-content {
+
+    }
+  }
+}
+
+/* Tablet */
+@media screen(md) {
+}
+
+/* Desktop */
+@media screen(lg) {
+}
