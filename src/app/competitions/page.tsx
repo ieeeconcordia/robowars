@@ -5,19 +5,19 @@ import Link from "next/link";
 export default function Competitions() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="mobile-section h-[calc(100vh-6rem)] bg-landing-grey text-white">
+      <div className="section h-[calc(100vh-6rem)] bg-landing-grey text-white">
         <div>
-          <h1 className="mobile-landing-header">Competitions</h1>
+          <h1 className="landing-header">Competitions</h1>
         </div>
 
-        <p className="mobile-p max-w-sm font-inter"></p>
-        <p className="mobile-p"></p>
+        <p className="p max-w-sm font-inter"></p>
+        <p className="p"></p>
       </div>
 
       {/* Team section */}
-      <div className="mobile-section text-black bg-white">
-        <h1 className="mobile-h2 ">The Organizing Team</h1>
-        <p className="mobile-p max-w-sm font-inter">
+      <div className="section text-black bg-white">
+        <h1 className="h2 ">The Organizing Team</h1>
+        <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
           of technology, and the thrill of competition converge. It's not just a
           battle; its a spectacle where amateur enthusiasts and seasoned
@@ -28,9 +28,9 @@ export default function Competitions() {
       </div>
 
       {/* Resources */}
-      <div className="mobile-section text-black bg-light-grey">
-        <h1 className="mobile-h2 ">Resources</h1>
-        <p className="mobile-p max-w-sm font-inter">
+      <div className="section text-black bg-light-grey">
+        <h1 className="h2 ">Resources</h1>
+        <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
           of technology, and the thrill of competition converge. It's not just a
           battle; its a spectacle where amateur enthusiasts and seasoned
@@ -42,9 +42,9 @@ export default function Competitions() {
           className="flex flex-col items-center justify-center gap-8 px-8 py-16 bg-white text-black shadow-lg rounded-lg overflow-hidden"
           href={"#"}
         >
-          <h3 className="mobile-h3">📕 Rule Book</h3>
+          <h3 className="h3">📕 Rule Book</h3>
 
-          <p className="mobile-p font-inter">
+          <p className="p font-inter">
             This contains all the information regarding the ....
           </p>
         </Link>
@@ -53,9 +53,9 @@ export default function Competitions() {
           className="flex flex-col items-center justify-center gap-8 px-8 py-16 bg-white text-black shadow-lg rounded-lg overflow-hidden"
           href={"#"}
         >
-          <h3 className="mobile-h3">📝 Info-session Notes</h3>
+          <h3 className="h3">📝 Info-session Notes</h3>
 
-          <p className="mobile-p font-inter">
+          <p className="p font-inter">
             This is for anyone who missed the info session. Don't worry, we
             gotchu!
           </p>
@@ -63,8 +63,8 @@ export default function Competitions() {
       </div>
 
       {/* FAQ Section */}
-      <div className="mobile-section text-white bg-primary">
-        <h1 className="mobile-h2">FAQ</h1>
+      <div className="section text-white bg-primary">
+        <h1 className="h2">FAQ</h1>
         <div className="w-full flex flex-col gap-4">
           <DropdownCard title="What is this?">
             The ultimate platform where the thunder of metal, the buzz of
@@ -97,8 +97,8 @@ export default function Competitions() {
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
-          <h2 className="mobile-h3">Can't find an answer?</h2>
-          <p className="mobile-p">
+          <h2 className="h3">Can't find an answer?</h2>
+          <p className="p">
             Don’t hesitate to contact us on our platforms or on our website.
           </p>
           <button className="btn-primary w-fit bg-white text-primary">
@@ -107,13 +107,13 @@ export default function Competitions() {
         </div>
       </div>
 
-      <div className="mobile-section text-black bg-white">
-        <h1 className="mobile-h2 ">Community Support</h1>
-        <p className="mobile-p max-w-sm font-inter">
+      <div className="section text-black bg-white">
+        <h1 className="h2 ">Community Support</h1>
+        <p className="p max-w-sm font-inter">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <h3 className="mobile-h3">Follow us on our platforms for updates!</h3>
+        <h3 className="h3">Follow us on our platforms for updates!</h3>
         <SocialRow />
       </div>
     </main>
