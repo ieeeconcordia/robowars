@@ -30,8 +30,8 @@ const config: Config = {
         raleway: ["var(--font-raleway)", ...fontFamily.serif],
       },
       padding: {
-        "mobile-x": "32px",
-        "mobile-y": "64px",
+        x: "32px",
+        y: "64px",
       },
       gap: {
         mobile: "32px",

@@ -2,13 +2,13 @@
 
 /* Mobile (the default) */
 #dropdown-card-container {
-  @apply flex flex-col items-stretch justify-stretch w-full h-full outline rounded-md outline-2;
+  @apply flex flex-col items-stretch justify-stretch w-full max-w-2xl h-full overflow-hidden  rounded-md outline-2 bg-white text-black;
   
   #card-title-container {
-    @apply flex flex-row items-center justify-between w-full h-12 bg-primary text-white px-4 py-2;
+    @apply flex flex-row items-center justify-between w-full h-12 bg-white text-black px-4 py-2 border-b-2 border-light-grey;
 
     #card-title {
-
+      @apply text-base font-semibold;
     }
 
   #card-arrow-container {
@@ -30,7 +30,7 @@
     @apply px-4 py-2 overflow-clip transition-all duration-200 ease-in-out;
 
     &.is-open {
-      @apply max-h-[1000px] py-2;
+      @apply max-h-[1000px] py-4;
     }
 
     &.is-closed {
@@ -38,7 +38,6 @@
     }
 
     #card-content {
-
     }
   }
 }

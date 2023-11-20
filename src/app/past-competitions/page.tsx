@@ -14,19 +14,27 @@ const images = [
 export default function PastCompetitions() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="mobile-section h-[calc(100vh-6rem)] bg-landing-grey text-white">
-        <div>
-          <h1 className="mobile-landing-header text-center">
-            Past <br /> Competitions
-          </h1>
+      <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("images/Landing-image.webp")',
+            opacity: 0.23, // Adjust the opacity value as needed
+          }}
+        ></div>
+
+        <div className="relative z-10 mx-auto">
+          <div className="mb-8 mx-auto">
+            <h1 className="landing-header text-center w-fit">
+              Past Competitions
+            </h1>
+          </div>
         </div>
-
-        <p className="mobile-p max-w-sm font-inter"></p>
-        <p className="mobile-p"></p>
       </div>
 
-      <div className="mobile-section text-black bg-light-grey">
-        <h1 className="mobile-h2 ">Robowars 2023</h1>
+      <div className="section text-black bg-light-grey">
+        <h1 className="h2 ">Robowars 2023</h1>
         <Carousel className="">
           {images.map((image, index) => (
             <div key={index}>
@@ -36,8 +44,8 @@ export default function PastCompetitions() {
         </Carousel>
       </div>
 
-      <div className="mobile-section text-black bg-white">
-        <h1 className="mobile-h2 ">Robowars 2019</h1>
+      <div className="section text-black bg-white">
+        <h1 className="h2 ">Robowars 2019</h1>
         <Carousel className="">
           {images.map((image, index) => (
             <div key={index}>
@@ -47,8 +55,8 @@ export default function PastCompetitions() {
         </Carousel>
       </div>
 
-      <div className="mobile-section text-black bg-light-grey">
-        <h1 className="mobile-h2 ">Robowars 2018</h1>
+      <div className="section text-black bg-light-grey">
+        <h1 className="h2 ">Robowars 2018</h1>
         <Carousel className="">
           {images.map((image, index) => (
             <div key={index}>
@@ -58,9 +66,9 @@ export default function PastCompetitions() {
         </Carousel>
       </div>
 
-      <div className="mobile-section text-black bg-white">
-        <h1 className="mobile-h2">Want to see more?</h1>
-        <p className="mobile-p">
+      <div className="section text-black bg-white">
+        <h1 className="h2">Want to see more?</h1>
+        <p className="p">
           Find more photos of the previous Robowars and more on our social media
           pages!
         </p>
