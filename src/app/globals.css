@@ -186,6 +186,6 @@ body {
   }
 
   .resource-card {
-    @apply h-full max-w-sm;
+    @apply h-full max-w-sm min-w-0;
   }
 }
