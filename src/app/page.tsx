@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className=" bg-white">
       {/* Landing Page */}
-      <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+      <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black flex flex-col justify-center">
         {/* Background Image with Dark Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -27,7 +27,10 @@ export default function Home() {
           <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8 mx-auto">
             Where machines collide and innovation thrives!
           </p>
-          <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
+
+          <div className="flex justify-center">
+            <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
+          </div>
         </div>
       </div>
 
@@ -44,8 +47,8 @@ export default function Home() {
         <h1 className="h2 ">About</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
-          of technology, and the thrill of competition converge. It's not just a
-          battle; its a spectacle where amateur enthusiasts and seasoned
+          of technology, and the thrill of competition converge. It&apos;s not
+          just a battle; its a spectacle where amateur enthusiasts and seasoned
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
@@ -65,8 +68,10 @@ export default function Home() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
+      </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 px-8 py-8 bg-primary text-white shadow-lg rounded-lg overflow-hidden">
+      <div className="categories">
+        <div className="categorie-card bg-primary text-white">
           <h3 className="h3">Amateur</h3>
 
           <div className="w-52 border-b border-white"></div>
@@ -82,7 +87,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 px-8 py-8 bg-secondary text-black shadow-lg rounded-lg overflow-hidden">
+        <div className="categorie-card bg-secondary">
           <h3 className="h3">Professional</h3>
           <div className="w-52 border-b border-black"></div>
           <p className="p font-inter">
@@ -151,10 +156,7 @@ export default function Home() {
         <button className="btn-primary bg-primary text-white">
           Register Now
         </button>
-      </div>
-
-      <div className="section text-black">
-        <h2 className="h2">Follow us on our platforms for updates!</h2>
+        <h3 className="h3 mt-4">Follow us on our platforms for updates!</h3>
         <SocialRow />
       </div>
     </main>

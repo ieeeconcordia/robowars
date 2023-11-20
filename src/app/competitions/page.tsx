@@ -5,13 +5,21 @@ import Link from "next/link";
 export default function Competitions() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="section h-[calc(100vh-6rem)] bg-landing-grey text-white">
-        <div>
-          <h1 className="landing-header">Competitions</h1>
-        </div>
+      <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("images/Landing-image.webp")',
+            opacity: 0.23, // Adjust the opacity value as needed
+          }}
+        ></div>
 
-        <p className="p max-w-sm font-inter"></p>
-        <p className="p"></p>
+        <div className="relative z-10 mx-auto">
+          <div className="mb-8 mx-auto">
+            <h1 className="landing-header text-center w-fit">Competitions</h1>
+          </div>
+        </div>
       </div>
 
       {/* Team section */}
@@ -19,8 +27,8 @@ export default function Competitions() {
         <h1 className="h2 ">The Organizing Team</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
-          of technology, and the thrill of competition converge. It's not just a
-          battle; its a spectacle where amateur enthusiasts and seasoned
+          of technology, and the thrill of competition converge. It&apos;s not
+          just a battle; its a spectacle where amateur enthusiasts and seasoned
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
@@ -32,72 +40,68 @@ export default function Competitions() {
         <h1 className="h2 ">Resources</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
-          of technology, and the thrill of competition converge. It's not just a
-          battle; its a spectacle where amateur enthusiasts and seasoned
+          of technology, and the thrill of competition converge. It&apos;s not
+          just a battle; its a spectacle where amateur enthusiasts and seasoned
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
 
-        <Link
-          className="flex flex-col items-center justify-center gap-8 px-8 py-16 bg-white text-black shadow-lg rounded-lg overflow-hidden"
-          href={"#"}
-        >
-          <h3 className="h3">📕 Rule Book</h3>
+        <div className="resources">
+          <Link className="resource-card min-h-full" href={"#"}>
+            <h3 className="h3">📕 Rule Book</h3>
 
-          <p className="p font-inter">
-            This contains all the information regarding the ....
-          </p>
-        </Link>
+            <p className="p font-inter">
+              This contains all the information regarding the ....
+            </p>
+          </Link>
 
-        <Link
-          className="flex flex-col items-center justify-center gap-8 px-8 py-16 bg-white text-black shadow-lg rounded-lg overflow-hidden"
-          href={"#"}
-        >
-          <h3 className="h3">📝 Info-session Notes</h3>
+          <Link className="resource-card" href={"#"}>
+            <h3 className="h3">📝 Info-session Notes</h3>
 
-          <p className="p font-inter">
-            This is for anyone who missed the info session. Don't worry, we
-            gotchu!
-          </p>
-        </Link>
+            <p className="p font-inter">
+              This is for anyone who missed the info session. Don&apos;t worry,
+              we gotchu!
+            </p>
+          </Link>
+        </div>
       </div>
 
       {/* FAQ Section */}
       <div className="section text-white bg-primary">
         <h1 className="h2">FAQ</h1>
-        <div className="w-full flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-4 items-center">
           <DropdownCard title="What is this?">
             The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It's not just a
-            battle; its a spectacle where amateur enthusiasts and seasoned
-            engineers unveil their autonomous combatants to engage in fierce
-            mechanical warfare.
+            technology, and the thrill of competition converge. It&apos;s not
+            just a battle; its a spectacle where amateur enthusiasts and
+            seasoned engineers unveil their autonomous combatants to engage in
+            fierce mechanical warfare.
           </DropdownCard>
           <DropdownCard title="What is this?">
             The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It's not just a
-            battle; its a spectacle where amateur enthusiasts and seasoned
-            engineers unveil their autonomous combatants to engage in fierce
-            mechanical warfare.
+            technology, and the thrill of competition converge. It&apos;s not
+            just a battle; its a spectacle where amateur enthusiasts and
+            seasoned engineers unveil their autonomous combatants to engage in
+            fierce mechanical warfare.
           </DropdownCard>
           <DropdownCard title="What is this?">
             The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It's not just a
-            battle; its a spectacle where amateur enthusiasts and seasoned
-            engineers unveil their autonomous combatants to engage in fierce
-            mechanical warfare.
+            technology, and the thrill of competition converge. It&apos;s not
+            just a battle; its a spectacle where amateur enthusiasts and
+            seasoned engineers unveil their autonomous combatants to engage in
+            fierce mechanical warfare.
           </DropdownCard>
           <DropdownCard title="What is this?">
             The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It's not just a
-            battle; its a spectacle where amateur enthusiasts and seasoned
-            engineers unveil their autonomous combatants to engage in fierce
-            mechanical warfare.
+            technology, and the thrill of competition converge. It&apos;s not
+            just a battle; its a spectacle where amateur enthusiasts and
+            seasoned engineers unveil their autonomous combatants to engage in
+            fierce mechanical warfare.
           </DropdownCard>
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
-          <h2 className="h3">Can't find an answer?</h2>
+          <h2 className="h3">Can&apos;t find an answer?</h2>
           <p className="p">
             Don’t hesitate to contact us on our platforms or on our website.
           </p>
@@ -113,7 +117,7 @@ export default function Competitions() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <h3 className="h3">Follow us on our platforms for updates!</h3>
+        <h3 className="h3 mt-4">Ask us anything on our platforms!</h3>
         <SocialRow />
       </div>
     </main>

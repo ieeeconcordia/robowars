@@ -14,15 +14,23 @@ const images = [
 export default function PastCompetitions() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="section h-[calc(100vh-6rem)] bg-landing-grey text-white">
-        <div>
-          <h1 className="landing-header text-center">
-            Past <br /> Competitions
-          </h1>
-        </div>
+      <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("images/Landing-image.webp")',
+            opacity: 0.23, // Adjust the opacity value as needed
+          }}
+        ></div>
 
-        <p className="p max-w-sm font-inter"></p>
-        <p className="p"></p>
+        <div className="relative z-10 mx-auto">
+          <div className="mb-8 mx-auto">
+            <h1 className="landing-header text-center w-fit">
+              Past Competitions
+            </h1>
+          </div>
+        </div>
       </div>
 
       <div className="section text-black bg-light-grey">
