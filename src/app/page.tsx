@@ -24,7 +24,7 @@ export default function Home() {
             <h5 className="w-fit">March 2024</h5>
           </div>
 
-          <p className="mobile-p max-w-sm font-inter drop-shadow-lg mb-8">
+          <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8">
             Where Machines Battle and Innovation Prevails!
           </p>
 
@@ -104,9 +104,9 @@ export default function Home() {
 
       <div className="h-2 w-full bg-white"></div>
 
-      <div className="mobile-section text-black bg-light-grey">
-        <h2 className="mobile-h2 ">Workshop</h2>
-        <p className="mobile-p max-w-sm font-inter">
+      <div className="section text-black bg-light-grey">
+        <h2 className="h2 ">Workshop</h2>
+        <p className="p max-w-sm font-inter">
           Participate in a series of hands-on Interactive Workshops carefully
           crafted to amplify your Sumobot prowess. Engage in:
         </p>
