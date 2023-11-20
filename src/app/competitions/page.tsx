@@ -58,52 +58,48 @@ export default function Competitions() {
           <Link className="resource-card" href={"#"}>
             <h3 className="h3">📝 Info-session Notes</h3>
 
-            <p className="p font-inter">
-              This is for anyone who missed the info session. Don&apos;t worry,
-              we gotchu!
-            </p>
-          </Link>
-        </div>
+          <p className="mobile-p font-inter">
+            This is for anyone who missed the info session. Don&apos;t worry, we
+            gotchu!
+          </p>
+        </Link>
       </div>
 
       {/* FAQ Section */}
-      <div className="section text-white bg-primary">
-        <h1 className="h2">FAQ</h1>
-        <div className="w-full flex flex-col gap-4 items-center">
-          <DropdownCard title="What is this?">
-            The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It&apos;s not
-            just a battle; its a spectacle where amateur enthusiasts and
-            seasoned engineers unveil their autonomous combatants to engage in
-            fierce mechanical warfare.
+      <div className="mobile-section text-white bg-primary">
+        <h1 className="mobile-h2">FAQ</h1>
+        <div className="w-full flex flex-col gap-4">
+          <DropdownCard title="Do I need to be a student to participate?">
+            No! This competition is open to everyone and anyone. You simply need
+            to have a robot.
           </DropdownCard>
-          <DropdownCard title="What is this?">
-            The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It&apos;s not
-            just a battle; its a spectacle where amateur enthusiasts and
-            seasoned engineers unveil their autonomous combatants to engage in
-            fierce mechanical warfare.
+          <DropdownCard title="Will there be a prize?">
+            Yes, and it will be announced shortly.
           </DropdownCard>
-          <DropdownCard title="What is this?">
-            The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It&apos;s not
-            just a battle; its a spectacle where amateur enthusiasts and
-            seasoned engineers unveil their autonomous combatants to engage in
-            fierce mechanical warfare.
+          <DropdownCard title="How do I enter?">
+            You must register through our vtools website. Click the “Register”
+            button on the menu above.
           </DropdownCard>
-          <DropdownCard title="What is this?">
-            The ultimate platform where the thunder of metal, the buzz of
-            technology, and the thrill of competition converge. It&apos;s not
-            just a battle; its a spectacle where amateur enthusiasts and
-            seasoned engineers unveil their autonomous combatants to engage in
-            fierce mechanical warfare.
+          <DropdownCard title="Do I need a team?">
+            You can enter with a team of 4 people maximum. You do not need a
+            team to enter however, if you have your own robot.
+          </DropdownCard>
+          <DropdownCard title="How much does it cost?">
+            The entrance fee is 10$ per person. We will provide food and
+            t-shirts on the day of the competition
+          </DropdownCard>
+          <DropdownCard title="How can I learn to build my robot?">
+            Come to IEEE Concordia&apos;s lab hours! We have plenty of
+            supervisors with experience that can help you with the guidelines.
+            You can see our opening times here.
           </DropdownCard>
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
-          <h2 className="h3">Can&apos;t find an answer?</h2>
-          <p className="p">
-            Don’t hesitate to contact us on our platforms or on our website.
+          <h2 className="mobile-h3">Can&apos;t find an answer?</h2>
+          <p className="mobile-p">
+            Don&apos;t hesitate to contact us on our platforms or on our
+            website.
           </p>
           <button className="btn-primary w-fit bg-white text-primary">
             Contact Us
