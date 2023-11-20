@@ -24,7 +24,7 @@ export default function Home() {
             <h5 className="w-fit">March 2024</h5>
           </div>
 
-          <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8">
+          <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8 mx-auto">
             Where Machines Battle and Innovation Prevails!
           </p>
 
@@ -52,9 +52,12 @@ export default function Home() {
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
-        <button className="btn-primary bg-primary text-white">
+        <a
+          className="btn-primary bg-primary text-white"
+          href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+        >
           Register Now
-        </button>
+        </a>
       </div>
 
       <div className="h-2 w-full bg-white"></div>
@@ -82,9 +85,12 @@ export default function Home() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <button className="btn-primary bg-primary border border-white">
+          <a
+            className="btn-primary bg-primary border border-white"
+            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+          >
             Register Now
-          </button>
+          </a>
         </div>
 
         <div className="categorie-card bg-secondary">
@@ -96,9 +102,12 @@ export default function Home() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <button className="btn-primary bg-secondary border border-black">
+          <a
+            className="btn-primary bg-secondary border border-black"
+            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+          >
             Register Now
-          </button>
+          </a>
         </div>
       </div>
 
@@ -151,9 +160,12 @@ export default function Home() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <button className="btn-primary bg-primary text-white">
+        <a
+          className="btn-primary bg-primary text-white"
+          href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+        >
           Register Now
-        </button>
+        </a>
         <h3 className="h3 mt-4">Follow us on our platforms for updates!</h3>
         <SocialRow />
       </div>

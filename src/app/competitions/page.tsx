@@ -32,7 +32,12 @@ export default function Competitions() {
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
-        <button className="btn-primary bg-primary text-white">Our Team</button>
+        <a
+          className="btn-primary bg-primary text-white"
+          href="https://www.ieeeconcordia.ca/about"
+        >
+          Our Team
+        </a>
       </div>
 
       {/* Resources */}
@@ -58,17 +63,18 @@ export default function Competitions() {
           <Link className="resource-card" href={"#"}>
             <h3 className="h3">📝 Info-session Notes</h3>
 
-          <p className="mobile-p font-inter">
-            This is for anyone who missed the info session. Don&apos;t worry, we
-            gotchu!
-          </p>
-        </Link>
+            <p className="p font-inter">
+              This is for anyone who missed the info session. Don&apos;t worry,
+              we gotchu!
+            </p>
+          </Link>
+        </div>
       </div>
 
       {/* FAQ Section */}
-      <div className="mobile-section text-white bg-primary">
-        <h1 className="mobile-h2">FAQ</h1>
-        <div className="w-full flex flex-col gap-4">
+      <div className="section text-white bg-primary">
+        <h1 className="h2">FAQ</h1>
+        <div className="w-full flex flex-col justify-center items-center gap-4">
           <DropdownCard title="Do I need to be a student to participate?">
             No! This competition is open to everyone and anyone. You simply need
             to have a robot.
@@ -85,7 +91,7 @@ export default function Competitions() {
             team to enter however, if you have your own robot.
           </DropdownCard>
           <DropdownCard title="How much does it cost?">
-            The entrance fee is 10$ per person. We will provide food and
+            The entrance fee is 30$ per person. We will provide food and
             t-shirts on the day of the competition
           </DropdownCard>
           <DropdownCard title="How can I learn to build my robot?">
@@ -96,14 +102,17 @@ export default function Competitions() {
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
-          <h2 className="mobile-h3">Can&apos;t find an answer?</h2>
-          <p className="mobile-p">
+          <h2 className="h3">Can&apos;t find an answer?</h2>
+          <p className="p">
             Don&apos;t hesitate to contact us on our platforms or on our
             website.
           </p>
-          <button className="btn-primary w-fit bg-white text-primary">
+          <a
+            className="btn-primary w-fit bg-white text-primary"
+            href="https://www.ieeeconcordia.ca/contact"
+          >
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
 

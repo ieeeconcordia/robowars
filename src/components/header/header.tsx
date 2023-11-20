@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div id="header-container">
       <div id="header-icon-container">
-        <Link href="/">
+        <Link href="ieeeconcordia.ca">
           <Image
             src="/images/ieee-logo-blue.png"
             width={64}
@@ -65,11 +65,15 @@ export default function Header() {
         <Link
           onClick={closeNavbar}
           className="navbar-link"
-          href="/#contact-container"
+          href="https://www.ieeeconcordia.ca/contact"
         >
           Contact Us
         </Link>
-        <Link onClick={closeNavbar} className="navbar-link button" href="/">
+        <Link
+          onClick={closeNavbar}
+          className="navbar-link button"
+          href="https://www.ieeeconcordia.ca/sponsorship"
+        >
           Sponsorships
         </Link>
         <div className="navbar-close">
