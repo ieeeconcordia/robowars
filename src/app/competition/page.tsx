@@ -2,7 +2,7 @@ import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import SocialRow from "@/components/social-row/social-row";
 import Link from "next/link";
 
-export default function Competitions() {
+export default function Competition() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="relative section h-[calc(100vh-6rem)] text-white overflow-hidden bg-black">
@@ -17,7 +17,7 @@ export default function Competitions() {
 
         <div className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
-            <h1 className="landing-header text-center w-fit">Competitions</h1>
+            <h1 className="landing-header text-center w-fit">Competition</h1>
           </div>
         </div>
       </div>
@@ -26,17 +26,16 @@ export default function Competitions() {
       <div className="section text-black bg-white">
         <h1 className="h2 ">The Organizing Team</h1>
         <p className="p max-w-sm font-inter">
-          RoboWars is the ultimate platform where the thunder of metal, the buzz
-          of technology, and the thrill of competition converge. It&apos;s not
-          just a battle; its a spectacle where amateur enthusiasts and seasoned
-          engineers unveil their autonomous combatants to engage in fierce
-          mechanical warfare.
+          We are a group of passionate engineering students who are excited to
+          bring you this awesome event. We&apos;re most often at our electrical lab at 
+          Concordia University, so don&apos;t hesitate to come visit and check out our website 
+          below!
         </p>
         <a
           className="btn-primary bg-primary text-white"
           href="https://www.ieeeconcordia.ca/about"
         >
-          Our Team
+          🫂 Our Team
         </a>
       </div>
 
@@ -44,11 +43,9 @@ export default function Competitions() {
       <div className="section text-black bg-light-grey">
         <h1 className="h2 ">Resources</h1>
         <p className="p max-w-sm font-inter">
-          RoboWars is the ultimate platform where the thunder of metal, the buzz
-          of technology, and the thrill of competition converge. It&apos;s not
-          just a battle; its a spectacle where amateur enthusiasts and seasoned
-          engineers unveil their autonomous combatants to engage in fierce
-          mechanical warfare.
+          Are you excited to participate in RoboWars? Here are some resources to
+          help you get started, as well as some unmissable information! 
+          Check out the FAQ below for more information :)
         </p>
 
         <div className="resources">
@@ -56,16 +53,16 @@ export default function Competitions() {
             <h3 className="h3">📕 Rule Book</h3>
 
             <p className="p font-inter">
-              This contains all the information regarding the ....
+              Contains all the rules and regulations for the competition. 
+              Read it carefully!
             </p>
           </Link>
 
           <Link className="resource-card" href={"#"}>
-            <h3 className="h3">📝 Info-session Notes</h3>
+            <h3 className="h3">📝 Info Session Notes</h3>
 
             <p className="p font-inter">
-              This is for anyone who missed the info session. Don&apos;t worry,
-              we gotchu!
+              For anyone that could not attend the info session, here&apos;s a quick summary of what was said!
             </p>
           </Link>
         </div>
@@ -97,31 +94,25 @@ export default function Competitions() {
           <DropdownCard title="How can I learn to build my robot?">
             Come to IEEE Concordia&apos;s lab hours! We have plenty of
             supervisors with experience that can help you with the guidelines.
-            You can see our opening times here.
           </DropdownCard>
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
           <h2 className="h3">Can&apos;t find an answer?</h2>
           <p className="p">
-            Don&apos;t hesitate to contact us on our platforms or on our
-            website.
+            Don&apos;t hesitate to contact us below and we&apos;ll get back to you 
+            as soon as possible!
           </p>
           <a
             className="btn-primary w-fit bg-white text-primary"
             href="https://www.ieeeconcordia.ca/contact"
           >
-            Contact Us
+            🤙🏽 Contact Us
           </a>
         </div>
       </div>
 
       <div className="section text-black bg-white">
-        <h1 className="h2 ">Community Support</h1>
-        <p className="p max-w-sm font-inter">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
         <h3 className="h3 mt-4">Ask us anything on our platforms!</h3>
         <SocialRow />
       </div>

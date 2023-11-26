@@ -6,7 +6,6 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import "./header.css";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
@@ -51,7 +50,7 @@ export default function Header() {
         <Link
           onClick={closeNavbar}
           className="navbar-link"
-          href="/competitions"
+          href="/competition"
         >
           Competition
         </Link>

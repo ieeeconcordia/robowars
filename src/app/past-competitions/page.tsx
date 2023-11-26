@@ -69,8 +69,7 @@ export default function PastCompetitions() {
       <div className="section text-black bg-white">
         <h1 className="h2">Want to see more?</h1>
         <p className="p">
-          Find more photos of the previous Robowars and more on our social media
-          pages!
+          Find more photos of the previous Robowars & more on our social media!
         </p>
         <SocialRow />
       </div>

@@ -36,14 +36,6 @@ export default function Home() {
 
       {/* About section */}
       <div className="section text-black bg-light-grey">
-        {/* <DropdownCard title="What is this?">
-          The ultimate platform where the thunder of metal, the buzz of
-          technology, and the thrill of competition converge. It's not just a
-          battle; its a spectacle where amateur enthusiasts and seasoned
-          engineers unveil their autonomous combatants to engage in fierce
-          mechanical warfare.
-        </DropdownCard> */}
-
         <h1 className="h2 ">About</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
@@ -54,9 +46,9 @@ export default function Home() {
         </p>
         <a
           className="btn-primary bg-primary text-white"
-          href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+          href="/competition"
         >
-          Register Now
+          📖 Learn more 
         </a>
       </div>
 
@@ -66,13 +58,11 @@ export default function Home() {
       <div className="section text-black">
         <h1 className="h2 ">Categories</h1>
         <p className="p max-w-sm font-inter">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Engage in the ultimate battle of wits and engineering prowess in two distinct categories:
         </p>
       </div>
 
+      {/* TODO: Fill in lorem ipsum according to what the differences are */}
       <div className="categories">
         <div className="categorie-card bg-primary text-white">
           <h3 className="h3">Amateur</h3>
@@ -89,11 +79,11 @@ export default function Home() {
             className="btn-primary bg-primary border border-white"
             href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
           >
-            Register Now
+            🏟️ Enter the Amateur Arena 
           </a>
         </div>
 
-        <div className="categorie-card bg-secondary">
+        <div className="categorie-card bg-secondary text-black">
           <h3 className="h3">Professional</h3>
           <div className="w-52 border-b border-black"></div>
           <p className="p font-inter">
@@ -106,17 +96,15 @@ export default function Home() {
             className="btn-primary bg-secondary border border-black"
             href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
           >
-            Register Now
+            🏟️ Enter the Professional Arena 
           </a>
         </div>
       </div>
 
-      <div className="h-2 w-full bg-white"></div>
-
       <div className="section text-black bg-light-grey">
-        <h2 className="h2 ">Workshop</h2>
+        <h2 className="h2 ">Interactive Workshops</h2>
         <p className="p max-w-sm font-inter">
-          Participate in a series of hands-on Interactive Workshops carefully
+          Participate in a series of hands-on interactive workshops carefully
           crafted to amplify your Sumobot prowess. Engage in:
         </p>
 
@@ -124,7 +112,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-2">
             <h3 className="h3 text-header-grey">Material Selection Mastery</h3>
             <p className="p font-inter">
-              Uncover the secrets of selecting the finest components, ensuring
+              Uncover the secrets of selecting the finest components & materials, ensuring
               your Sumobot is both sturdy and agile.
             </p>
           </div>
@@ -147,6 +135,14 @@ export default function Home() {
               ahead.
             </p>
           </div>
+
+          {/* TODO: replace link with proper workshop links */}
+          <a
+            className="btn-primary bg-dark-grey border border-black"
+            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+          >
+            🏫 Register for a Workshop 
+          </a>
         </div>
       </div>
 
@@ -155,16 +151,13 @@ export default function Home() {
       <div className="section text-black">
         <h1 className="h2 ">Join the Battle!</h1>
         <p className="p max-w-sm font-inter">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Join the battle and compete for the title of RoboWars Champion! 👑
         </p>
         <a
           className="btn-primary bg-primary text-white"
           href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
         >
-          Register Now
+          🏟️ Enter the Arena 
         </a>
         <h3 className="h3 mt-4">Follow us on our platforms for updates!</h3>
         <SocialRow />
