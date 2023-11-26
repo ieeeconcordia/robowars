@@ -17,8 +17,24 @@
     @apply w-screen h-screen bg-white z-20 fixed top-0 left-0 flex flex-col justify-start items-end p-8 gap-y-4 text-black text-3xl font-bold transition-transform duration-200 ease-in-out;
 
     .navbar-link {
-        @apply transition-transform duration-200 ease-in-out;
+      @apply transition-transform duration-200 ease-in-out;
+
+      &.active {
+        @apply border-b-4 mb-[-4px];
       }
+
+      &.active:nth-child(1) {
+        @apply border-primary;
+      }
+
+      &.active:nth-child(2) {
+        @apply border-secondary;
+      }
+
+      &.active:nth-child(3) {
+        @apply border-tertiary;
+      }
+    }
 
     /* Mobile has a flying navbar, unlike the other sizes */
     &.navbar-is-open {
@@ -47,6 +63,14 @@
 @media screen(md) {
   #header-container {
     @apply pl-4;
+
+    #navbar-links-container {
+      .navbar-link {
+        &.active {
+          @apply border-b-2 mb-[-2px];
+        }
+      }
+    }
   }
 }
 
@@ -65,7 +89,7 @@
       }
 
       .navbar-link.button {
-        @apply bg-secondary py-2 px-4 text-white;
+        @apply bg-secondary py-2 px-4 text-black;
       }
 
       .navbar-close {

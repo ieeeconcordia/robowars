@@ -2,13 +2,17 @@
 
 "use client";
 
-import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+import React from "react";
 import Image from "next/image";
-import "./header.css";
 import Link from "next/link";
+
+import "./header.css";
 
 export default function Header() {
   const [isNavbarOpen, setIsNavbarOpen] = React.useState(false);
+  const pathName = usePathname();
 
   function openNavbar() {
     setIsNavbarOpen(true);
@@ -44,19 +48,21 @@ export default function Header() {
         id="navbar-links-container"
         className={isNavbarOpen ? "navbar-is-open" : "navbar-is-closed"}
       >
-        <Link onClick={closeNavbar} className="navbar-link" href="/">
-          Home
+        <Link onClick={closeNavbar} 
+              className={"navbar-link " + (pathName === "/" && "active")} 
+              href="/">
+          Home 
         </Link>
         <Link
           onClick={closeNavbar}
-          className="navbar-link"
+          className={"navbar-link " + (pathName === "/competition" && "active")}
           href="/competition"
         >
           Competition
         </Link>
         <Link
           onClick={closeNavbar}
-          className="navbar-link"
+          className={"navbar-link " + (pathName === "/past-competitions" && "active")}
           href="/past-competitions"
         >
           Past Competitions
