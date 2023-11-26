@@ -29,10 +29,10 @@ export default function DropdownCard({
 
   return (
     <div id="dropdown-card-container">
-      <div id="card-title-container">
+      <button id="card-title-container" onClick={toggleDropdown}>
         <p id="card-title">{title}</p>
 
-        <button id="card-arrow-container" onClick={toggleDropdown}>
+        <div id="card-arrow-container">
           <svg
             id="card-arrow"
             xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +51,8 @@ export default function DropdownCard({
                         1 0-.708z"
             />
           </svg>
-        </button>
-      </div>
+        </div>
+      </button>
 
       <div
         id="card-content-container"
