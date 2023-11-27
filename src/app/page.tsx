@@ -70,10 +70,14 @@ export default function Home() {
           <div className="w-52 border-b border-white"></div>
 
           <p className="p font-inter">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Is this your first time building a Sumobot? No problem! The Amateur
+            category is perfect for you. 
+          </p>
+          
+          <p className="p font-inter">
+            With a wooden arena and surrounded by inspired
+            amateurs like yourself, you will be able to learn the ropes of Sumobot building
+            and compete in a friendly environment.
           </p>
           <a
             className="btn-primary bg-primary border border-white"
@@ -87,10 +91,14 @@ export default function Home() {
           <h3 className="h3">Professional</h3>
           <div className="w-52 border-b border-black"></div>
           <p className="p font-inter">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Are you a seasoned Sumobot builder? Do you have a team of engineers ready to
+            take on the competition? The Professional category is for you. 
+          </p>
+          
+          <p className="p font-inter">
+            With a metal arena, magnet-based
+            Sumobots, and surrounded by other experts, you will be able to showcase your skills
+            and compete for the title of RoboWars Champion!
           </p>
           <a
             className="btn-primary bg-secondary border border-black"
