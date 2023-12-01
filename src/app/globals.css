@@ -10,7 +10,7 @@
 
 :root {
   --font-inter: "Inter", sans-serif; /* Define the custom font Inter with fallback */
-  --font-raleway: "Raleway", serif; /* Define the custom font Raleway with fallback */
+  --font-raleway: "Raleway", sans-serif; /* Define the custom font Raleway with fallback */
 }
 
 @media (prefers-color-scheme: dark) {

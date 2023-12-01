@@ -3,7 +3,7 @@
 /* Mobile (the default) */
 
 #header-container {
-  @apply max-h-24 bg-white flex w-full flex-row justify-between items-center pr-4 pl-2 font-inter;
+  @apply max-h-24 bg-white flex w-full flex-row justify-between items-center pr-4 pl-2 font-raleway;
 
   #header-icon-container {
     @apply w-16;
@@ -85,7 +85,7 @@
       @apply static flex flex-row w-[unset] h-8 p-0 justify-end gap-x-4 items-center translate-x-0 !important;
 
       .navbar-link {
-        @apply font-light text-base translate-x-0 !important;
+        @apply font-semibold text-base translate-x-0 !important;
       }
 
       .navbar-link.button {
