@@ -50,7 +50,7 @@ export default function PastCompetitions() {
           }}
         ></div>
 
-        <div className="relative z-10 mx-auto">
+        <div id="content" className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
             <h1 className="landing-header text-center w-fit">
               Past Competitions
@@ -61,7 +61,7 @@ export default function PastCompetitions() {
 
       <div className="section text-black bg-light-grey">
         <h1 className="h2 ">Robowars 2023</h1>
-        <Carousel className="max-w-screen-lg w-[90%]">
+        <Carousel autoPlay={false} className="max-w-screen-lg w-[90%]">
           {images2023.map((image, index) => (
             <div key={index}>
               <img key={index} src={image} alt="Robowars 2023" className="aspect-video" />
@@ -72,7 +72,7 @@ export default function PastCompetitions() {
 
       <div className="section text-black bg-white">
         <h1 className="h2 ">Robowars 2019</h1>
-        <Carousel className="max-w-screen-lg w-[90%]">
+        <Carousel autoPlay={false} className="max-w-screen-lg w-[90%]">
           {images2019.map((image, index) => (
             <div key={index}>
               <img src={image} alt="Robowars 2023" className="aspect-video" />
@@ -83,7 +83,7 @@ export default function PastCompetitions() {
 
       <div className="section text-black bg-light-grey">
         <h1 className="h2 ">Robowars 2018</h1>
-        <Carousel className="max-w-screen-lg w-[90%]">
+        <Carousel autoPlay={false} className="max-w-screen-lg w-[90%]">
           {images2018.map((image, index) => (
             <div key={index}>
               <img src={image} alt="Robowars 2023" className="aspect-video" />

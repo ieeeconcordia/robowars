@@ -1,8 +1,42 @@
 "use client";
-import CategoriesCard from "@/components/categories-card";
 import DateCounter from "@/components/date-counter/date-counter";
-import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import SocialRow from "@/components/social-row/social-row";
+import { Carousel } from "react-responsive-carousel";
+
+const images2023 = [
+  {
+    url: "/images/past-robowars/2023/1.webp",
+    caption: "RoboWars 2023",
+  },
+  {
+    url: "/images/past-robowars/2023/2.webp",
+    caption: "RoboWars 2023",
+  },
+    {
+    url: "/images/past-robowars/2023/8.webp",
+    caption: "RoboWars 2023",
+  },
+  {
+    url: "/images/past-robowars/2019/3.webp",
+    caption: "RoboWars 2019",
+  },
+  {
+    url: "/images/past-robowars/2019/4.webp",
+    caption: "RoboWars 2019",
+  },
+  {
+    url: "/images/past-robowars/2019/5.webp",
+    caption: "RoboWars 2019",
+  },
+  {
+    url: "/images/past-robowars/2018/6.webp",
+    caption: "RoboWars 2018",
+  },
+  {
+    url: "/images/past-robowars/2018/7.webp",
+    caption: "RoboWars 2018",
+  },
+];
 
 export default function Home() {
   return (
@@ -35,7 +69,7 @@ export default function Home() {
       </div>
 
       {/* About section */}
-      <div className="section text-black bg-light-grey">
+      <div className="section text-black bg-white">
         <h1 className="h2 ">About</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
@@ -54,16 +88,39 @@ export default function Home() {
 
       <div className="h-2 w-full bg-white"></div>
 
+      {/* Previous Competitions section */}
+      <div className="section text-white bg-tertiary">
+        <h1 className="h2 ">Past Years</h1>
+        <p className="p max-w-sm font-inter">
+          RoboWars has been running for over 4 years! Check out the previous
+          years&apos; competitions and their robots!
+        </p>
+        <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className="max-w-screen-lg min-w-[18rem] w-[70%]">
+          {images2023.map((image, index) => (
+            <div key={index}>
+              <img key={index} src={image.url} alt="Robowars 2023" className="aspect-video" />
+              <p className="legend">{image.caption}</p>
+            </div>
+          ))}
+        </Carousel>
+        <a
+          className="btn-primary bg-primary text-white"
+          href="/past-competitions#content"
+        >
+          🔭 See more
+        </a>
+      </div>
+
       {/* Categories */}
-      <div className="section text-black">
+      {/* <div className="section text-black">
         <h1 className="h2 ">Categories</h1>
         <p className="p max-w-sm font-inter">
           Engage in the ultimate battle of wits and engineering prowess in two distinct categories:
         </p>
-      </div>
+      </div> */}
 
       {/* TODO: Fill in lorem ipsum according to what the differences are */}
-      <div className="categories">
+      {/* <div className="categories">
         <div className="categorie-card bg-primary text-white">
           <h3 className="h3">Amateur</h3>
 
@@ -107,7 +164,7 @@ export default function Home() {
             🏟️ Enter the Professional Arena 
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className="section text-black bg-light-grey">
         <h2 className="h2 ">Interactive Workshops</h2>
