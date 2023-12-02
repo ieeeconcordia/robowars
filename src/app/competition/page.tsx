@@ -49,7 +49,7 @@ export default function Competition() {
         </p>
 
         <div className="resources">
-          <Link className="resource-card min-h-full" href={"#"}>
+          <Link className="resource-card min-h-full" target="_blank" href="https://docs.google.com/document/d/1SiHC75bjC51SlUVKktLs23cgWCM6Mfay7_a3S9hVEWw/edit?usp=sharing">
             <h3 className="h3">📕 Rule Book</h3>
 
             <p className="p font-inter">
