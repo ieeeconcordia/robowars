@@ -2,6 +2,7 @@
 import DateCounter from "@/components/date-counter/date-counter";
 import SocialRow from "@/components/social-row/social-row";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const images2023 = [
   {
