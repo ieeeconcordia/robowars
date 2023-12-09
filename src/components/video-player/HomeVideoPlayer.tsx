@@ -1,4 +1,3 @@
-import { CldVideoPlayer } from "next-cloudinary";
 import React from "react";
 
 export default function HomeVideoPlayer() {
