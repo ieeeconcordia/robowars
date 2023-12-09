@@ -1,8 +1,9 @@
 "use client";
 import DateCounter from "@/components/date-counter/date-counter";
 import SocialRow from "@/components/social-row/social-row";
+import HomeVideoPlayer from "@/components/video-player/HomeVideoPlayer";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images2023 = [
   {
@@ -13,7 +14,7 @@ const images2023 = [
     url: "/images/past-robowars/2023/2.webp",
     caption: "RoboWars 2023",
   },
-    {
+  {
     url: "/images/past-robowars/2023/8.webp",
     caption: "RoboWars 2023",
   },
@@ -71,6 +72,7 @@ export default function Home() {
 
       {/* About section */}
       <div className="section text-black bg-white">
+        <HomeVideoPlayer />
         <h1 className="h2 ">About</h1>
         <p className="p max-w-sm font-inter">
           RoboWars is the ultimate platform where the thunder of metal, the buzz
@@ -79,11 +81,8 @@ export default function Home() {
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
         </p>
-        <a
-          className="btn-primary bg-primary text-white"
-          href="/competition"
-        >
-          📖 Learn more 
+        <a className="btn-primary bg-primary text-white" href="/competition">
+          📖 Learn more
         </a>
       </div>
 
@@ -96,10 +95,21 @@ export default function Home() {
           RoboWars has been running for over 4 years! Check out the previous
           years&apos; competitions and their robots!
         </p>
-        <Carousel showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} className="max-w-screen-lg min-w-[18rem] w-[70%]">
+        <Carousel
+          showThumbs={false}
+          autoPlay={true}
+          interval={3000}
+          infiniteLoop={true}
+          className="max-w-screen-lg min-w-[18rem] w-[70%]"
+        >
           {images2023.map((image, index) => (
             <div key={index}>
-              <img key={index} src={image.url} alt="Robowars 2023" className="aspect-video" />
+              <img
+                key={index}
+                src={image.url}
+                alt="Robowars 2023"
+                className="aspect-video"
+              />
               <p className="legend">{image.caption}</p>
             </div>
           ))}
@@ -178,8 +188,8 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-2">
             <h3 className="h3 text-header-grey">Material Selection Mastery</h3>
             <p className="p font-inter">
-              Uncover the secrets of selecting the finest components & materials, ensuring
-              your Sumobot is both sturdy and agile.
+              Uncover the secrets of selecting the finest components &
+              materials, ensuring your Sumobot is both sturdy and agile.
             </p>
           </div>
 
@@ -207,7 +217,7 @@ export default function Home() {
             className="btn-primary bg-dark-grey border border-black"
             href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
           >
-            🏫 Register for a Workshop 
+            🏫 Register for a Workshop
           </a>
         </div>
       </div>
@@ -223,7 +233,7 @@ export default function Home() {
           className="btn-primary bg-primary text-white"
           href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
         >
-          🏟️ Enter the Arena 
+          🏟️ Enter the Arena
         </a>
         <h3 className="h3 mt-4">Follow us on our platforms for updates!</h3>
         <SocialRow />
