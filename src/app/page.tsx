@@ -65,7 +65,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center">
-            <DateCounter eventDate={new Date(2024, 3, 20, 9, 0, 0)} />
+            <DateCounter eventDate={new Date(2024, 2, 20, 9, 0, 0)} />
           </div>
         </div>
       </div>
