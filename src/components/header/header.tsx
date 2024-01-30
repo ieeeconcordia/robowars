@@ -56,6 +56,14 @@ export default function Header() {
         <Link
           onClick={closeNavbar}
           className={"navbar-link " + (pathName === "/competition" && "active")}
+          target="_blank"
+          href="https://docs.google.com/document/d/1SiHC75bjC51SlUVKktLs23cgWCM6Mfay7_a3S9hVEWw/edit?usp=sharing"
+        >
+          Rulebook
+        </Link>
+        <Link
+          onClick={closeNavbar}
+          className={"navbar-link " + (pathName === "/competition" && "active")}
           href="/competition"
         >
           Competition
