@@ -57,7 +57,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
             <h1 className="landing-header text-center w-fit">ROBOWARS</h1>
-            <h5 className="w-fit">March 17th, 2024</h5>
+            <h5 className="w-fit">March 17th, 2025</h5>
           </div>
 
           <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8 mx-auto">
@@ -65,7 +65,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center">
-            <DateCounter eventDate={new Date(2024, 2, 17, 9, 0, 0)} />
+            <DateCounter eventDate={new Date(2025, 2, 17, 9, 0, 0)} />
           </div>
         </div>
       </div>
