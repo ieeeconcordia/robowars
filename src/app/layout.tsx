@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const raleway = Raleway({ subsets: ["latin-ext"], variable: "--font-raleway" });
 
 export const metadata: Metadata = {
-  title: "IEEE Robowars 2024",
-  description: "The official website for IEEE Robowars 2024",
+  title: "Robowars 2025",
+  description: "The official website for IEEE Concordia's Robowars",
 };
 
 export default function RootLayout({
