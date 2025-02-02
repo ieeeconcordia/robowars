@@ -3,6 +3,7 @@ import DateCounter from "@/components/date-counter/date-counter";
 import SocialRow from "@/components/social-row/social-row";
 import HomeVideoPlayer from "@/components/video-player/HomeVideoPlayer";
 import { Carousel } from "react-responsive-carousel";
+import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images2023 = [
@@ -57,7 +58,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
             <h1 className="landing-header text-center w-fit">ROBOWARS</h1>
-            <h5 className="w-fit">March 17th, 2025</h5>
+            <h5 className="w-fit">May 17th, 2025</h5>
           </div>
 
           <p className="landing-subheader max-w-sm font-inter drop-shadow-lg mb-8 mx-auto">
@@ -65,7 +66,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center">
-            <DateCounter eventDate={new Date(2025, 2, 17, 9, 0, 0)} />
+            <DateCounter eventDate={new Date(2025, 4, 17, 9, 0, 0)} />
           </div>
         </div>
       </div>
@@ -122,102 +123,44 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Categories */}
-      {/* <div className="section text-black">
-        <h1 className="h2 ">Categories</h1>
-        <p className="p max-w-sm font-inter">
-          Engage in the ultimate battle of wits and engineering prowess in two distinct categories:
-        </p>
-      </div> */}
-
-      {/* TODO: Fill in lorem ipsum according to what the differences are */}
-      {/* <div className="categories">
-        <div className="categorie-card bg-primary text-white">
-          <h3 className="h3">Amateur</h3>
-
-          <div className="w-52 border-b border-white"></div>
-
-          <p className="p font-inter">
-            Is this your first time building a Sumobot? No problem! The Amateur
-            category is perfect for you. 
-          </p>
-          
-          <p className="p font-inter">
-            With a wooden arena and surrounded by inspired
-            amateurs like yourself, you will be able to learn the ropes of Sumobot building
-            and compete in a friendly environment.
-          </p>
-          <a
-            className="btn-primary bg-primary border border-white"
-            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
-          >
-            🏟️ Enter the Amateur Arena 
-          </a>
+      {/* FAQ Section */}
+      <div className="section text-white bg-primary">
+        <h1 className="h2">FAQ</h1>
+        <div className="w-full flex flex-col justify-center items-center gap-4">
+          <DropdownCard title="Do I need to be a student to participate?">
+            Not at all! This competition is open to everyone and anyone. You simply need
+            to have a robot :)
+          </DropdownCard>
+          <DropdownCard title="Will there be a prize?">
+            Yes, and it will be announced closer to the competition!
+          </DropdownCard>
+          <DropdownCard title="How do I enter?">
+            You must pay through our Zeffy page. Click the &apos;Register&apos;
+            button on the menu above.
+          </DropdownCard>
+          <DropdownCard title="Do I need a team?">
+            Although not mandatory, we recommend signing up with a team (maximum 4 people).
+          </DropdownCard>
+          <DropdownCard title="How much does it cost?">
+            Check the most up-to-date prices by clicking on the &apos;Register&apos; button below :)
+          </DropdownCard>
+          <DropdownCard title="How can I learn to build my robot?">
+            Come to IEEE Concordia&apos;s lab hours! We have plenty of
+            supervisors with experience that can help you with the guidelines.
+          </DropdownCard>
         </div>
 
-        <div className="categorie-card bg-secondary text-black">
-          <h3 className="h3">Professional</h3>
-          <div className="w-52 border-b border-black"></div>
-          <p className="p font-inter">
-            Are you a seasoned Sumobot builder? Do you have a team of engineers ready to
-            take on the competition? The Professional category is for you. 
-          </p>
-          
-          <p className="p font-inter">
-            With a metal arena, magnet-based
-            Sumobots, and surrounded by other experts, you will be able to showcase your skills
-            and compete for the title of RoboWars Champion!
+        <div className="flex flex-col gap-4 mt-4 justify-center items-center">
+          <h2 className="h3">Can&apos;t find an answer?</h2>
+          <p className="p">
+            Don&apos;t hesitate to contact us below (or through Discord!) and we&apos;ll get back to you 
+            as soon as possible!
           </p>
           <a
-            className="btn-primary bg-secondary border border-black"
-            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+            className="btn-primary w-fit bg-white text-primary"
+            href="https://www.ieeeconcordia.ca/contact"
           >
-            🏟️ Enter the Professional Arena 
-          </a>
-        </div>
-      </div> */}
-
-      <div className="section text-black bg-light-grey">
-        <h2 className="h2 ">Interactive Workshops</h2>
-        <p className="p max-w-sm font-inter">
-          Participate in a series of hands-on interactive workshops carefully
-          crafted to amplify your Sumobot prowess. Engage in:
-        </p>
-
-        <div className="flex flex-col items-center justify-center gap-8 p-8 bg-dark-grey shadow-lg rounded-lg overflow-hidden">
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h3 className="h3 text-header-grey">Material Selection Mastery</h3>
-            <p className="p font-inter">
-              Uncover the secrets of selecting the finest components &
-              materials, ensuring your Sumobot is both sturdy and agile.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h3 className="h3 text-header-grey">
-              University Funding Strategies
-            </h3>
-            <p className="p font-inter">
-              Learn effective techniques to secure funding within your
-              university, providing support for your robotic ambitions.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h3 className="h3 text-header-grey">Programming Expertise</h3>
-            <p className="p font-inter">
-              Master the essential art of programming, empowering you to breathe
-              life into your Sumobot and gear up for the exhilarating battles
-              ahead.
-            </p>
-          </div>
-
-          {/* TODO: replace link with proper workshop links */}
-          <a
-            className="btn-primary bg-dark-grey border border-black"
-            href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
-          >
-            🏫 Register for a Workshop
+            🤙🏽 Contact Us
           </a>
         </div>
       </div>
@@ -225,17 +168,15 @@ export default function Home() {
       <div className="h-2 w-full bg-white"></div>
 
       <div className="section text-black">
-        <h1 className="h2 ">Join the Battle!</h1>
-        <p className="p max-w-sm font-inter">
+        <h3 className="h3 max-w-sm font-inter">
           Join the battle and compete for the title of RoboWars Champion! 👑
-        </p>
+        </h3>
         <a
           className="btn-primary bg-primary text-white"
-          href="https://www.zeffy.com/en-CA/ticketing/cb19d699-b286-456e-a897-23937c82d6bc"
+          href="https://www.zeffy.com/ticketing/ieee-robowars--2025"
         >
-          🏟️ Enter the Arena
+          🏟️ Register
         </a>
-        <h3 className="h3 mt-4">Follow us on our platforms for updates!</h3>
         <SocialRow />
       </div>
     </main>

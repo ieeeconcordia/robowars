@@ -1,4 +1,3 @@
-import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import SocialRow from "@/components/social-row/social-row";
 import Link from "next/link";
 
@@ -49,7 +48,7 @@ export default function Competition() {
         </p>
 
         <div className="resources">
-          <Link className="resource-card min-h-full" target="_blank" href="https://docs.google.com/document/d/1SiHC75bjC51SlUVKktLs23cgWCM6Mfay7_a3S9hVEWw/edit?usp=sharing">
+          <Link className="resource-card min-h-full" target="_blank" href="https://docs.google.com/document/d/1uE_qKhlLz3xWvRydPu98WYNGkwppWoMsOBT8aPYuovw">
             <h3 className="h3">📕 Rule Book</h3>
 
             <p className="p font-inter">
@@ -68,54 +67,6 @@ export default function Competition() {
         </div>
       </div>
 
-      {/* FAQ Section */}
-      <div className="section text-white bg-primary">
-        <h1 className="h2">FAQ</h1>
-        <div className="w-full flex flex-col justify-center items-center gap-4">
-          <DropdownCard title="Do I need to be a student to participate?">
-            No! This competition is open to everyone and anyone. You simply need
-            to have a robot.
-          </DropdownCard>
-          <DropdownCard title="Will there be a prize?">
-            Yes, and it will be announced shortly.
-          </DropdownCard>
-          <DropdownCard title="How do I enter?">
-            You must register through our vtools website. Click the “Register”
-            button on the menu above.
-          </DropdownCard>
-          <DropdownCard title="Do I need a team?">
-            You can enter with a team of 4 people maximum. You do not need a
-            team to enter however, if you have your own robot.
-          </DropdownCard>
-          <DropdownCard title="How much does it cost?">
-            The entrance fee is 30$ per person. We will provide food and
-            t-shirts on the day of the competition
-          </DropdownCard>
-          <DropdownCard title="How can I learn to build my robot?">
-            Come to IEEE Concordia&apos;s lab hours! We have plenty of
-            supervisors with experience that can help you with the guidelines.
-          </DropdownCard>
-        </div>
-
-        <div className="flex flex-col gap-4 mt-4 justify-center items-center">
-          <h2 className="h3">Can&apos;t find an answer?</h2>
-          <p className="p">
-            Don&apos;t hesitate to contact us below and we&apos;ll get back to you 
-            as soon as possible!
-          </p>
-          <a
-            className="btn-primary w-fit bg-white text-primary"
-            href="https://www.ieeeconcordia.ca/contact"
-          >
-            🤙🏽 Contact Us
-          </a>
-        </div>
-      </div>
-
-      <div className="section text-black bg-white">
-        <h3 className="h3 mt-4">Ask us anything on our platforms!</h3>
-        <SocialRow />
-      </div>
     </main>
   );
 }
