@@ -2,7 +2,7 @@
 
 /* Mobile (the default) */
 #social-row-container {
-  @apply flex flex-row gap-4;
+  @apply flex flex-row gap-4 m-auto;
 }
 
 /* Tablet */

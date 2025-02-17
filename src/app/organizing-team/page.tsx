@@ -16,7 +16,7 @@ export default function Competition() {
 
         <div className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
-            <h1 className="landing-header text-center w-fit">Competition</h1>
+            <h1 className="landing-header text-center w-fit">Who are we?</h1>
           </div>
         </div>
       </div>
@@ -27,12 +27,11 @@ export default function Competition() {
         <p className="p max-w-sm font-inter">
           We are a group of passionate engineering students who are excited to
           bring you this awesome event. We&apos;re most often at our electrical lab at 
-          Concordia University, so don&apos;t hesitate to come visit and check out our website 
-          below!
+          Concordia University, so don&apos;t hesitate to come visit and check out our website below!
         </p>
         <a
           className="btn-primary bg-primary text-white"
-          href="https://www.ieeeconcordia.ca/about"
+          href="https://ieeeconcordia.ca/about"
         >
           🫂 Our Team
         </a>
@@ -44,7 +43,7 @@ export default function Competition() {
         <p className="p max-w-sm font-inter">
           Are you excited to participate in RoboWars? Here are some resources to
           help you get started, as well as some unmissable information! 
-          Check out the FAQ below for more information :)
+          Also, check out the FAQ on the home page :)
         </p>
 
         <div className="resources">
@@ -57,13 +56,21 @@ export default function Competition() {
             </p>
           </Link>
 
-          <Link className="resource-card" href={"#"}>
+          <Link className="resource-card min-h-full" href="/#faq">
+            <h3 className="h3">❓ FAQ</h3>
+
+            <p className="p font-inter">
+              A collection of the most frequently asked questions about RoboWars.
+            </p>
+          </Link>
+
+          {/*<Link className="resource-card" href={"#"}>
             <h3 className="h3">📝 Info Session Notes</h3>
 
             <p className="p font-inter">
               For anyone that could not attend the info session, here&apos;s a quick summary of what was said!
             </p>
-          </Link>
+          </Link> */}
         </div>
       </div>
 

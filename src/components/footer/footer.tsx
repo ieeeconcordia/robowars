@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import SocialRow from "@/components/social-row/social-row";
 import './footer.css';
 
 export default function Footer() {
@@ -23,8 +24,10 @@ export default function Footer() {
                 </div>
             </div>
 
+            <SocialRow />
+
             <div id="footer-copyright-container">
-                <p>©2023 IEEE Concordia. All rights reserved.</p>
+                <p>©2025 IEEE Concordia. All rights reserved.</p>
             </div>
         </div>
     )

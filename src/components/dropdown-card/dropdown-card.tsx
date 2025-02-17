@@ -9,11 +9,13 @@ import "./dropdown-card.css";
 export default function DropdownCard({
   title,
   children,
+  initialOpen = "false",
 }: {
   title: string;
   children: React.ReactNode;
+  initialOpen: string;
 }) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(initialOpen == "true");
 
   function toggleDropdown() {
     setIsOpen(!isOpen);

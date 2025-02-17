@@ -2,7 +2,7 @@
 
 /* Mobile (the default) */
 #footer-container {
-  @apply w-full max-w-sm m-auto h-[18rem] px-4 pt-4 text-base flex flex-col justify-center items-start;
+  @apply w-full max-w-sm m-auto mt-2 h-[24rem] px-4 pt-4 text-base flex flex-col justify-center items-start;
 
   #footer-ieee-container {
     @apply flex flex-row justify-around items-center;

@@ -68,6 +68,21 @@ export default function Home() {
           <div className="flex justify-center">
             <DateCounter eventDate={new Date(2025, 4, 17, 9, 0, 0)} />
           </div>
+
+          <div className="flex justify-center mt-16">
+            <a
+              className="btn-primary bg-primary text-white mr-8"
+              href="https://www.zeffy.com/ticketing/ieee-robowars--2025"
+            >
+              🏟️ Register
+            </a>
+            <a
+              className="btn-primary bg-primary text-white"
+              href="https://discord.gg/v72GaWYVek"
+            >
+              💫 Robowars Discord
+            </a>
+          </div>
         </div>
       </div>
 
@@ -81,9 +96,13 @@ export default function Home() {
           just a battle; its a spectacle where amateur enthusiasts and seasoned
           engineers unveil their autonomous combatants to engage in fierce
           mechanical warfare.
+          <br />
+          <br />
+          Join us on May 17th, 2025, for the 7th edition of RoboWars and stay tuned
+          for more information on the event's Discord server above!
         </p>
-        <a className="btn-primary bg-primary text-white" href="/competition">
-          📖 Learn more
+        <a className="btn-primary bg-primary text-white" href="/organizing-team">
+          📖 Learn more about IEEE Concordia
         </a>
       </div>
 
@@ -93,7 +112,7 @@ export default function Home() {
       <div className="section text-white bg-tertiary">
         <h1 className="h2 ">Past Years</h1>
         <p className="p max-w-sm font-inter">
-          RoboWars has been running for over 4 years! Check out the previous
+          RoboWars has been running for over 6 years! Check out the previous
           years&apos; competitions and their robots!
         </p>
         <Carousel
@@ -124,60 +143,40 @@ export default function Home() {
       </div>
 
       {/* FAQ Section */}
-      <div className="section text-white bg-primary">
+      <div id="faq" className="section text-white bg-primary">
         <h1 className="h2">FAQ</h1>
         <div className="w-full flex flex-col justify-center items-center gap-4">
-          <DropdownCard title="Do I need to be a student to participate?">
-            Not at all! This competition is open to everyone and anyone. You simply need
-            to have a robot :)
+          <DropdownCard title="Do I need to be a Concordia student to participate?">
+            Not at all! This competition is open to everyone and anyone (don't even need to be a student). You simply need to have a robot :)
           </DropdownCard>
           <DropdownCard title="Will there be a prize?">
-            Yes, and it will be announced closer to the competition!
+            Yes, and they will be announced closer to the competition!
           </DropdownCard>
           <DropdownCard title="How do I enter?">
             You must pay through our Zeffy page. Click the &apos;Register&apos;
-            button on the menu above.
+            button below.
           </DropdownCard>
           <DropdownCard title="Do I need a team?">
-            Although not mandatory, we recommend signing up with a team (maximum 4 people).
+            Although not mandatory, we recommend signing up with a team (maximum 6 people).
           </DropdownCard>
           <DropdownCard title="How much does it cost?">
             Check the most up-to-date prices by clicking on the &apos;Register&apos; button below :)
           </DropdownCard>
           <DropdownCard title="How can I learn to build my robot?">
             Come to IEEE Concordia&apos;s lab hours! We have plenty of
-            supervisors with experience that can help you with the guidelines.
+            supervisors with experience that can help you with the guidelines. We'll also anounce workshops, so make sure to join the Discord server above to know when they are happening!
+          </DropdownCard>
+          <DropdownCard title="WHERE CAN I FIND MORE INFO?" initialOpen="true">
+            We have an information session on <b>February 22nd, 2025, from 10:00 AM to 12:00 PM</b>. Make sure to join the Discord server above to get the link (in #announcements)!
           </DropdownCard>
         </div>
 
         <div className="flex flex-col gap-4 mt-4 justify-center items-center">
           <h2 className="h3">Can&apos;t find an answer?</h2>
           <p className="p">
-            Don&apos;t hesitate to contact us below (or through Discord!) and we&apos;ll get back to you 
-            as soon as possible!
+            Don&apos;t hesitate to contact us through Discord and we&apos;ll get back to you as soon as possible!
           </p>
-          <a
-            className="btn-primary w-fit bg-white text-primary"
-            href="https://www.ieeeconcordia.ca/contact"
-          >
-            🤙🏽 Contact Us
-          </a>
         </div>
-      </div>
-
-      <div className="h-2 w-full bg-white"></div>
-
-      <div className="section text-black">
-        <h3 className="h3 max-w-sm font-inter">
-          Join the battle and compete for the title of RoboWars Champion! 👑
-        </h3>
-        <a
-          className="btn-primary bg-primary text-white"
-          href="https://www.zeffy.com/ticketing/ieee-robowars--2025"
-        >
-          🏟️ Register
-        </a>
-        <SocialRow />
       </div>
     </main>
   );
