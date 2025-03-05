@@ -5,6 +5,7 @@ import HomeVideoPlayer from "@/components/video-player/HomeVideoPlayer";
 import { Carousel } from "react-responsive-carousel";
 import DropdownCard from "@/components/dropdown-card/dropdown-card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link";
 
 const images2023 = [
   {
@@ -99,7 +100,7 @@ export default function Home() {
           <br />
           <br />
           Join us on May 17th, 2025, for the 7th edition of RoboWars and stay tuned
-          for more information on the event's Discord server above!
+          for more information on the event&apos;s Discord server above!
         </p>
         <a className="btn-primary bg-primary text-white" href="/organizing-team">
           📖 Learn more about IEEE Concordia
@@ -147,7 +148,7 @@ export default function Home() {
         <h1 className="h2">FAQ</h1>
         <div className="w-full flex flex-col justify-center items-center gap-4">
           <DropdownCard title="Do I need to be a Concordia student to participate?">
-            Not at all! This competition is open to everyone and anyone (don't even need to be a student). You simply need to have a robot :)
+            Not at all! This competition is open to everyone and anyone (don&apos;t even need to be a student). You simply need to have a robot :)
           </DropdownCard>
           <DropdownCard title="Will there be a prize?">
             Yes, and they will be announced closer to the competition!
@@ -164,10 +165,10 @@ export default function Home() {
           </DropdownCard>
           <DropdownCard title="How can I learn to build my robot?">
             Come to IEEE Concordia&apos;s lab hours! We have plenty of
-            supervisors with experience that can help you with the guidelines. We'll also anounce workshops, so make sure to join the Discord server above to know when they are happening!
+            supervisors with experience that can help you with the guidelines. We&apos;ll also anounce workshops, so make sure to join the Discord server above to know when they are happening!
           </DropdownCard>
           <DropdownCard title="WHERE CAN I FIND MORE INFO?" initialOpen="true">
-            We have an information session on <b>February 22nd, 2025, from 10:00 AM to 12:00 PM</b>. Make sure to join the Discord server above to get the link (in #announcements)!
+            Check the the info session slides <Link href="https://www.canva.com/design/DAGfqbOEMjE/ys4vMkHjW4AzVO8m3zfoqA/edit?utm_content=DAGfqbOEMjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><u>here</u></Link>. Make sure to join the Discord server above to get the link (in #announcements)!
           </DropdownCard>
         </div>
 

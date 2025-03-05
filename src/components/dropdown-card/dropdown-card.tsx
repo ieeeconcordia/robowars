@@ -13,7 +13,7 @@ export default function DropdownCard({
 }: {
   title: string;
   children: React.ReactNode;
-  initialOpen: string;
+  initialOpen?: string;
 }) {
   const [isOpen, setIsOpen] = React.useState(initialOpen == "true");
 
