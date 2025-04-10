@@ -58,6 +58,7 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto">
           <div className="mb-8 mx-auto">
+            <h2 className="landing-subheader text-center w-fit">The 24th annual</h2>
             <h1 className="landing-header text-center w-fit">ROBOWARS</h1>
             <h5 className="w-fit">May 17th, 2025</h5>
           </div>
@@ -99,7 +100,7 @@ export default function Home() {
           mechanical warfare.
           <br />
           <br />
-          Join us on May 17th, 2025, for the 7th edition of RoboWars and stay tuned
+          Join us on May 17th, 2025, for the 24th edition of RoboWars and stay tuned
           for more information on the event&apos;s Discord server above!
         </p>
         <a className="btn-primary bg-primary text-white" href="/organizing-team">
@@ -113,7 +114,7 @@ export default function Home() {
       <div className="section text-white bg-tertiary">
         <h1 className="h2 ">Past Years</h1>
         <p className="p max-w-sm font-inter">
-          RoboWars has been running for over 6 years! Check out the previous
+          RoboWars has been running for over 20 years! Check out the previous
           years&apos; competitions and their robots!
         </p>
         <Carousel
